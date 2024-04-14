@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="defualt.css">
+  <link rel="stylesheet" href="code.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Include Prism.js CSS with dark theme -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-dark.min.css">
+
+  <title>C Programs</title>
+</head>
+
+<body>
+  <header>
+    <h1><i class="far fa fa-code"></i> CODE</h1>
+  </header>
+  <div class="icons">
+    <div class="back">
+      <a href="index.html"><button id="backbtn"> &larr; </button></a>
+    </div>
+    <div class="searchcode">
+      <i class="fas fa fa-search"></i><input type="text" id="searchInput" placeholder="Search programs...">
+    </div>
+  </div>
+  <h1 id="title">Python Programs</h1>
+
+  <main>
+    <div class="code-container" id="codeContainer">
+
+      <!-- Program 1: Hello World -->
+      <div class="question">
+        <p>Program - 1: "Hello World"</p>
+        <div class="code">
+          <div class="code-title">
+            <div class="dots">
+              <div class="red"></div>
+              <div class="green"></div>
+              <div class="orange"></div>
+            </div>
+            <div class="copycode">
+              <button id="copycode"><i class="fas fa fa-clipboard"></i> Copy Code</button>
+            </div>
+          </div>
+          <div class="code-body">
+            <pre><code class="language-python">
+  print("Hello World!")
+            </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Program 1: Hello World -->
+      <div class="question">
+        <p>Program - 2: "Sum of two number"</p>
+        <div class="code">
+          <div class="code-title">
+            <div class="dots">
+              <div class="red"></div>
+              <div class="green"></div>
+              <div class="orange"></div>
+            </div>
+            <div class="copycode">
+              <button id="copycode"><i class="fas fa fa-clipboard"></i> Copy Code</button>
+            </div>
+          </div>
+          <div class="code-body">
+            <pre><code class="language-python">
+a = 10
+b = 10
+sum = a + b
+print(f"The sum of {a} and {b} is {sum}")
+            </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Program 1: Check  if the number is even or odd -->
+      <div class="question">
+        <p>Program - 1: "Check If the number is odd or Even"</p>
+        <div class="code">
+          <div class="code-title">
+            <div class="dots">
+              <div class="red"></div>
+              <div class="green"></div>
+              <div class="orange"></div>
+            </div>
+            <div class="copycode">
+              <button id="copycode"><i class="fas fa fa-clipboard"></i> Copy Code</button>
+            </div>
+          </div>
+          <div class="code-body">
+            <pre><code class="language-python">
+num = int(input("Enter a Number :"))
+if (num % 2) == 0:
+  print(f"{num} is Even")
+else:
+  print(f"{num} is Odd")
+            </code></pre>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    
+  </main>
+  <footer>
+    <p>&copy;2021 Code.Diwash. | All rights reserved.</p>
+  </footer>
+
+  <script src="copycode.js"></script>
+  <!-- Include Prism.js and its language files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-python.min.js"></script>
+
+  <script>
+    // Apply syntax highlighting to all code snippets on the page
+    document.querySelectorAll('pre code').forEach((block) => {
+      Prism.highlightElement(block);
+    });
+  </script>
+
+</body>
+
+</html>

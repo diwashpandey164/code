@@ -1,0 +1,144 @@
+body{
+  background: var(--background-01);
+  color: var(--text-color) !important;
+}
+
+#title{
+  text-align: center;
+  padding: 30px;
+  font-family: var(--font-roboto);
+  color: var(--text-color);
+  background: var(--background-01);
+  font-size: var(--font-size-extra-large);
+}
+
+
+
+main{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  background: var(--background-01);
+  color: var(--text-color);
+}
+
+
+
+.code-container {
+  width: 100%;
+  height: auto;
+  min-height: 80ch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.question{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.question p{
+  font-family: var(--font-roboto);
+  font-size: var(--font-size-medium);
+  background: var(--background-02);
+  padding: 10px;
+  border-radius: var(--radius);
+}
+
+.code{
+  width: 100%;
+  height: auto;
+  background: var(--background-03);
+  border-radius: var(--radius);
+  box-shadow: var(--box-shadow-dark);
+}
+
+.code .code-title{
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  height: fit-content;
+  padding: 10px 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  gap: 20px;
+  background: var(--background-02);
+}
+
+.code .code-title .dots{
+  width: 100px;
+  height: 20px;
+  display: flex;
+  gap:  5px;
+  justify-content: center;
+}
+
+.red{
+  background: var(--red);
+}
+.green{
+  background: var(--green);
+}
+.orange{
+  background: var(--orange);
+}
+
+.code .code-title .dots div{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.code .code-title .question p{
+  font-family:var(--font-roboto)
+}
+
+.code .code-body{
+  width: 100%;
+  height: fit-content;
+  background: var(--background-03);
+  border-radius: var(--radius);
+}
+
+.code .code-body pre{
+  text-align: left;
+  letter-spacing: 1px;
+  font-size: var(--font-size-medium);
+  font-family: var(--font-code);
+  background: var(--background-03);
+  border: none;
+  padding: 10px 20px;
+}
+
+
+
+.copycode{
+  max-width: 112px;
+}
+
+#copycode{
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-family: var(--font-roboto);
+  font-size: calc(var(--font-size-medium) - .15rem);
+}
+
+
+@media screen and (max-width:700px) {
+  .question{
+    width: 100% !important;
+  }
+  
+}

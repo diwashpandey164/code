@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="defualt.css">
+  <link rel="stylesheet" href="code.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Include Prism.js CSS with dark theme -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-dark.min.css">
+
+  <title>C Programs</title>
+</head>
+
+<body>
+  <header>
+    <h1><i class="far fa fa-code"></i> CODE</h1>
+  </header>
+  
+  <div class="icons">
+    <div class="back">
+      <a href="index.html"><button id="backbtn"> &larr; </button></a>
+    </div>
+    <div class="searchcode">
+      <i class="fas fa fa-search"></i><input type="text" id="searchInput" placeholder="Search programs...">
+    </div>
+  </div>
+  <h1 id="title">C Programs</h1>
+
+  <main>
+    <div class="code-container" id="codeContainer">
+      <!-- Program 1: Hello World -->
+      <div class="question">
+        <p>Program - 1: "Hello World"</p>
+        <div class="code">
+          <div class="code-title">
+            <div class="dots">
+              <div class="red"></div>
+              <div class="green"></div>
+              <div class="orange"></div>
+            </div>
+            <div class="copycode">
+              <button id="copycode"><i class="fas fa fa-clipboard"></i> Copy Code</button>
+            </div>
+          </div>
+          <div class="code-body">
+            <pre><code class="language-c">
+    #include &lt;stdio.h&gt;
+    
+    int main() {
+        printf("Hello, world!\n");
+        return 0;
+    }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Program 2: Add Two Numbers -->
+      <div class="question">
+        <p>Program - 2: "Add Two Numbers"</p>
+        <div class="code">
+          <div class="code-title">
+            <div class="dots">
+              <div class="red"></div>
+              <div class="green"></div>
+              <div class="orange"></div>
+            </div>
+            <div class="copycode">
+              <button id="copycode"><i class="fas fa fa-clipboard"></i> Copy Code</button>
+            </div>
+          </div>
+          <div class="code-body">
+            <pre><code class="language-c">
+    #include &lt;stdio.h&gt;
+    
+    int main() {
+        int num1 = 5, num2 = 10, sum;
+        
+        sum = num1 + num2;
+        
+        printf("Sum of %d and %d is %d\n", num1, num2, sum);
+        
+        return 0;
+    }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Program 3: Find Maximum of Two Numbers -->
+      <div class="question">
+        <p>Program - 3: "Find Maximum of Two Numbers"</p>
+        <div class="code">
+          <div class="code-title">
+            <div class="dots">
+              <div class="red"></div>
+              <div class="green"></div>
+              <div class="orange"></div>
+            </div>
+            <div class="copycode">
+              <button id="copycode"><i class="fas fa fa-clipboard"></i> Copy Code</button>
+            </div>
+          </div>
+          <div class="code-body">
+            <pre><code class="language-c">
+    #include &lt;stdio.h&gt;
+    
+    int main() {
+        int num1 = 5, num2 = 10, max;
+        
+        max = (num1 > num2) ? num1 : num2;
+        
+        printf("Maximum of %d and %d is %d\n", num1, num2, max);
+        
+        return 0;
+    }
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Program 4: Factorial of a Number -->
+<div class="question">
+  <p>Program - 4: "Factorial of a Number"</p>
+  <div class="code">
+    <div class="code-title">
+      <div class="dots">
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="orange"></div>
+      </div>
+      <div class="copycode">
+        <button id="copycode"><i class="fas fa fa-clipboard"></i> Copy Code</button>
+      </div>
+    </div>
+    <div class="code-body">
+      <pre><code class="language-c">
+#include &lt;stdio.h&gt;
+
+int main() {
+    int num = 5, factorial = 1;
+    
+    for (int i = 1; i <= num; i++) {
+        factorial *= i;
+    }
+    
+    printf("Factorial of %d is %d\n", num, factorial);
+    
+    return 0;
+}
+      </code></pre>
+    </div>
+  </div>
+</div>
+
+<!-- Program 5: Check Even or Odd -->
+<div class="question">
+  <p>Program - 5: "Check Even or Odd"</p>
+  <div class="code">
+    <div class="code-title">
+      <div class="dots">
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="orange"></div>
+      </div>
+      <div class="copycode">
+        <button id="copycode"><i class="fas fa fa-clipboard"></i> Copy Code</button>
+      </div>
+    </div>
+    <div class="code-body">
+      <pre><code class="language-c">
+#include &lt;stdio.h&gt;
+
+int main() {
+    int num = 5;
+    
+    if (num % 2 == 0) {
+        printf("%d is even\n", num);
+    } else {
+        printf("%d is odd\n", num);
+    }
+    
+    return 0;
+}
+      </code></pre>
+    </div>
+  </div>
+</div>
+
+<!-- Program 6: Simple Interest Calculation -->
+<div class="question">
+  <p>Program - 6: "Simple Interest Calculation"</p>
+  <div class="code">
+    <div class="code-title">
+      <div class="dots">
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="orange"></div>
+      </div>
+      <div class="copycode">
+        <button id="copycode"><i class="fas fa fa-clipboard"></i> Copy Code</button>
+      </div>
+    </div>
+    <div class="code-body">
+      <pre><code class="language-c">
+#include &lt;stdio.h&gt;
+
+int main() {
+    float principal = 1000, rate = 5, time = 2, simple_interest;
+    
+    simple_interest = (principal * rate * time) / 100;
+    
+    printf("Simple Interest: %f\n", simple_interest);
+    
+    return 0;
+}
+      </code></pre>
+    </div>
+  </div>
+</div>
+
+<!-- Program 7: Check Leap Year -->
+<div class="question">
+  <p>Program - 7: "Check Leap Year"</p>
+  <div class="code">
+    <div class="code-title">
+      <div class="dots">
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="orange"></div>
+      </div>
+      <div class="copycode">
+        <button id="copycode"><i class="fas fa fa-clipboard"></i> Copy Code</button>
+      </div>
+    </div>
+    <div class="code-body">
+      <pre><code class="language-c">
+#include &lt;stdio.h&gt;
+
+int main() {
+    int year = 2024;
+    
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+        printf("%d is a leap year\n", year);
+    } else {
+        printf("%d is not a leap year\n", year);
+    }
+    
+    return 0;
+}
+      </code></pre>
+    </div>
+  </div>
+</div>
+
+<!-- Program 8: Reverse a Number -->
+<div class="question">
+  <p>Program - 8: "Reverse a Number"</p>
+  <div class="code">
+    <div class="code-title">
+      <div class="dots">
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="orange"></div>
+      </div>
+      <div class="copycode">
+        <button id="copycode"><i class="fas fa fa-clipboard"></i> Copy Code</button>
+      </div>
+    </div>
+    <div class="code-body">
+      <pre><code class="language-c">
+#include &lt;stdio.h&gt;
+
+int main() {
+    int num = 12345, reversed = 0, remainder;
+    
+    while (num != 0) {
+        remainder = num % 10;
+        reversed = reversed * 10 + remainder;
+        num /= 10;
+    }
+    
+    printf("Reversed Number: %d\n", reversed);
+    
+    return 0;
+}
+      </code></pre>
+    </div>
+  </div>
+</div>
+
+<!-- Program 9: Check Prime Number -->
+<div class="question">
+  <p>Program - 9: "Check Prime Number"</p>
+  <div class="code">
+    <div class="code-title">
+      <div class="dots">
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="orange"></div>
+      </div>
+      <div class="copycode">
+        <button id="copycode"><i class="fas fa fa-clipboard"></i> Copy Code</button>
+      </div>
+    </div>
+    <div class="code-body">
+      <pre><code class="language-c">
+#include &lt;stdio.h&gt;
+
+int main() {
+    int num = 17, is_prime = 1;
+    
+    for (int i = 2; i <= num / 2; i++) {
+        if (num % i == 0) {
+            is_prime = 0;
+            break;
+        }
+    }
+    
+    if (is_prime) {
+        printf("%d is a prime number\n", num);
+    } else {
+        printf("%d is not a prime number\n", num);
+    }
+    
+    return 0;
+}
+      </code></pre>
+    </div>
+  </div>
+</div>
+
+<!-- Program 10: Print Fibonacci Series -->
+<div class="question">
+  <p>Program - 10: "Print Fibonacci Series"</p>
+  <div class="code">
+    <div class="code-title">
+      <div class="dots">
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="orange"></div>
+      </div>
+      <div class="copycode">
+        <button id="copycode"><i class="fas fa fa-clipboard"></i> Copy Code</button>
+      </div>
+    </div>
+    <div class="code-body">
+      <pre><code class="language-c">
+#include &lt;stdio.h&gt;
+
+int main() {
+    int n = 10, t1 = 0, t2 = 1, next_term;
+
+    printf("Fibonacci Series: ");
+
+    for (int i = 1; i <= n; ++i) {
+        printf("%d, ", t1);
+        next_term = t1 + t2;
+        t1 = t2;
+        t2 = next_term;
+    }
+
+    return 0;
+}
+      </code></pre>
+    </div>
+  </div>
+</div>
+
+    
+</div>
+    
+  </main>
+  <footer>
+    <p>&copy;2021 Code.Diwash. | All rights reserved.</p>
+  </footer>
+
+  <script src="copycode.js"></script>
+  <!-- Include Prism.js and its language files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-c.min.js"></script>
+
+  <script>
+     // Apply syntax highlighting to all code snippets on the page
+     document.querySelectorAll('pre code').forEach((block) => {
+       Prism.highlightElement(block);
+     });
+  </script>
+
+</body>
+
+</html>
